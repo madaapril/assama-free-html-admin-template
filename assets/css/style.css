@@ -199,6 +199,42 @@ body.sidebar-toggled #sidebar-overlay {
   gap: 1rem;
 }
 
+.topbar-github-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: var(--transition);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.topbar-github-btn i {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.topbar-github-btn:hover {
+  background: #24292f;
+  color: #ffffff !important;
+  border-color: #24292f;
+  box-shadow: 0 4px 12px rgba(36, 41, 47, 0.15);
+  transform: translateY(-1px);
+}
+
+.topbar-github-btn:hover i {
+  color: #ffffff !important;
+}
+
+
 .user-profile-btn {
   display: flex;
   align-items: center;
