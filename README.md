@@ -1,16 +1,17 @@
 <h1 align="center">
   <br>
-  🌊 ASSAMA
+  🌊 Assama - Free HTML Admin Template
   <br>
 </h1>
 
-<h4 align="center">A modern, glassmorphism-styled admin template built with Bootstrap 5.</h4>
+<h4 align="center">A free, modern, and responsive Bootstrap 5 admin dashboard template with sleek glassmorphism design.</h4>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
   <img src="https://img.shields.io/badge/jQuery-3.7-0769AD?style=flat-square&logo=jquery&logoColor=white" />
   <img src="https://img.shields.io/badge/Chart.js-4.4-FF6384?style=flat-square&logo=chart.js&logoColor=white" />
   <img src="https://img.shields.io/badge/SweetAlert2-11-EA4C89?style=flat-square" />
+  <img src="https://img.shields.io/badge/Price-100%25%20Free-brightgreen?style=flat-square" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" />
 </p>
 
@@ -28,6 +29,7 @@
 
 ## ✨ Features
 
+- 🆓 **100% Free & Open Source** — Free to use for personal and commercial web projects
 - 🎨 **Glassmorphism Design** — Modern frosted-glass UI with smooth shadows and blur effects
 - 📱 **Fully Responsive** — Mobile-first layout with collapsible sidebar
 - 🌈 **Sky Blue Theme** — Carefully curated color palette with gradient accents
@@ -86,8 +88,8 @@ Since this is a pure static HTML template, no installation is needed.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/assama.git
-cd assama
+git clone https://github.com/madaapril/assama-free-html-admin-template.git
+cd assama-free-html-admin-template
 ```
 
 ### 2. Open in browser
@@ -108,7 +110,7 @@ open index.html    # macOS
 ## 📁 Structure
 
 ```
-assama/
+assama-free-html-admin-template/
 ├── index.html                    # Dashboard (main entry point)
 ├── assets/
 │   ├── css/
@@ -117,6 +119,10 @@ assama/
 │   │   └── script.js             # Shared JS (sidebar, tooltips, form loading)
 │   └── images/
 │       └── favicon.png
+├── layouts/
+│   ├── default.html              # Base layout structure
+│   ├── auth.html                 # Authentication layout
+│   └── blank.html                # Blank layout
 ├── pages/
 │   ├── auth/
 │   │   └── login.html
