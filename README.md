@@ -1,4 +1,4 @@
-﻿<h1 align="center">
+<h1 align="center">
   <br>
   🌊 ASSAMA
   <br>
@@ -20,6 +20,7 @@
   <a href="#tech-stack">Tech Stack</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#structure">Structure</a> •
+  <a href="#support">Support</a> •
   <a href="#license">License</a>
 </p>
 
@@ -159,6 +160,20 @@ Use `pages/blank.html` as a starter. It includes:
 
 ---
 
+## ☕ Support
+
+If you find this template useful and want to support the development, you can buy me a coffee!
+
+<p align="center">
+  <a href="https://trakteer.id/madaapril/tip" target="_blank">
+    <img src="https://img.shields.io/badge/Support%20Me%20on-Trakteer-%23EE5A24?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Support on Trakteer" />
+  </a>
+</p>
+
+Your support helps me keep building and maintaining open-source projects like this. Thank you! 🙏
+
+---
+
 ## 📝 License
 
 This project is open-source and available under the [MIT License](LICENSE).
@@ -170,7 +185,11 @@ This project is open-source and available under the [MIT License](LICENSE).
 **Mohammada Aprilianto**
 
 - Instagram: [@madaapril](https://instagram.com/madaapril)
+- Trakteer: [trakteer.id/madaapril](https://trakteer.id/madaapril/tip)
 
 ---
 
 <p align="center">Made with ❤️ by Mohammada Aprilianto</p>
+<p align="center">
+  <a href="https://trakteer.id/madaapril/tip">☕ Support this project</a>
+</p>

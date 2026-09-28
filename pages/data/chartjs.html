@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Created by Mohammada Aprilianto | IG @madaapril"
+    />
+    <meta name="author" content="Mohammada Aprilianto" />
+
+    <title>Chart.js - Assama</title>
+
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Frameworks -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"
+      rel="stylesheet"
+    />
+
+    <!-- DataTables -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <!-- FLATPICKR -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.5.4"></script>
+
+    <!-- Custom Premium Styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+
+  <body class="">
+    <div id="admin-wrapper">
+      <!-- Sidebar -->
+      <aside id="admin-sidebar" class="">
+        <!-- Brand / Logo -->
+        <div class="sidebar-brand-wrapper">
+          <div class="sidebar-brand">
+            <img
+              src="../../assets/images/favicon.png"
+              alt="Logo"
+              class="brand-img"
+            />
+            <div class="brand-text">
+              <span class="brand-name">ASSAMA</span>
+              <span class="brand-sub">Sky Blue</span>
+            </div>
+            <div id="sidebarClose">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav Items -->
+        <div class="sidebar-nav-container pb-3">
+          <div class="nav-section-title mt-0">MENU</div>
+          <a href="../../index.html" class="nav-link">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <div class="nav-section-title">AUTHENTICATION</div>
+          <a href="../auth/login.html" class="nav-link">
+            <i class="fa-solid fa-user"></i>
+            <span>Login</span>
+          </a>
+
+          <div class="nav-section-title">UI ELEMENTS</div>
+          <a href="../ui_elements/colors.html" class="nav-link">
+            <i class="fa-solid fa-palette"></i>
+            <span>Colors</span>
+          </a>
+          <a href="../ui_elements/buttons.html" class="nav-link">
+            <i class="fa-solid fa-square-pen"></i>
+            <span>Buttons</span>
+          </a>
+          <a href="../ui_elements/sweet_alert.html" class="nav-link">
+            <i class="fa-solid fa-bell"></i>
+            <span>Sweet Alert</span>
+          </a>
+
+          <div class="nav-section-title">DATA</div>
+          <a href="../data/datatables.html" class="nav-link">
+            <i class="fa-solid fa-table"></i>
+            <span>DataTables</span>
+          </a>
+          <a
+            href="#collapseChart"
+            data-bs-toggle="collapse"
+            class="nav-link active"
+            aria-expanded="false"
+            aria-controls="collapseChart"
+          >
+            <i class="fa-solid fa-chart-simple"></i>
+            <span>Charts</span>
+            <i
+              class="fa-solid fa-chevron-down ms-auto"
+              style="font-size: 0.8rem; transition: transform 0.3s"
+            ></i>
+          </a>
+          <div id="collapseChart" class="collapse show">
+            <div
+              class="glass-card mb-2 mx-3 p-2"
+              style="
+                border-radius: 12px;
+                background: rgba(255, 255, 255, 0.4);
+                border: 1px solid rgba(255, 255, 255, 0.5);
+              "
+            >
+              <a href="chartjs.html" class="nav-link-sub active-sub">
+                Chart.js</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-section-title">PAGES</div>
+          <a href="../blank.html" class="nav-link">
+            <i class="fa-solid fa-file"></i>
+            <span>Blank Page</span>
+          </a>
+
+          <div class="nav-section-title">ERRORS</div>
+          <a href="../errors/404.html" class="nav-link">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>404</span>
+          </a>
+          <a href="../errors/maintenance.html" class="nav-link">
+            <i class="fa-solid fa-tools"></i>
+            <span>Maintenance</span>
+          </a>
+        </div>
+      </aside>
+
+      <div id="admin-content">
+        <!-- Topbar -->
+        <div id="admin-topbar">
+          <div class="sidebar-toggle" id="sidebarToggle">
+            <i class="fa-solid fa-bars-staggered fs-5"></i>
+          </div>
+
+          <div class="topbar-brand">
+            <span class="text-gradient">ASSAMA</span>
+            <span class="ms-1 d-none d-sm-inline opacity-75 fw-light"
+              >Chart.js</span
+            >
+          </div>
+
+          <div class="topbar-actions">
+            <!-- User Profile Dropdown -->
+            <div class="dropdown">
+              <div
+                class="user-profile-btn"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="user-info d-none d-md-block">
+                  <span class="user-name">Mohammada Aprilianto</span>
+                </div>
+                <span
+                  class="user-avatar bg-primary d-flex align-items-center justify-content-center text-white fw-bold"
+                  >MA</span
+                >
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-premium">
+                <li class="px-3 py-2 mb-2 d-md-none border-bottom border-light">
+                  <span class="user-name fw-bold">Mohammada Aprilianto</span>
+                </li>
+                <!-- <li>
+                    <a class="dropdown-item dropdown-item-premium" href="<?= base_url('profile'); ?>">
+                        <i class="fa-solid fa-user-gear"></i> Profil Saya
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item dropdown-item-premium" href="<?= base_url('settings'); ?>">
+                        <i class="fa-solid fa-gears"></i> Pengaturan
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider opacity-50">
+                </li> -->
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-premium text-danger"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-power-off text-danger"></i> Sign Out
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <main class="content-container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="glass-card glass-card-header p-4 mb-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <h2 class="fw-bold mb-0 text-main fs-5">
+                      <i class="fa-solid fa-chart-simple me-2 text-primary"></i>
+                      Chartjs
+                    </h2>
+                    <p class="text-muted small mb-0 mt-1">
+                      Chart.js visualisation example
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bar Chart -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="glass-card card mb-4">
+                <div
+                  class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                >
+                  <h6 class="m-0 font-weight-bold text-primary">
+                    Yearly Realisation, Per Work Unit
+                    <span class="text-danger">2026</span>
+                  </h6>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-center">
+                    <div
+                      class="spinner-border spinner-border-sm loading-bar"
+                      role="status"
+                    >
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
+                  <div
+                    class="chart-area"
+                    style="position: relative; height: 500px"
+                  >
+                    <canvas id="realisasiPADAreaChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="mt-auto py-4">
+          <div class="px-4">
+            <div
+              class="row align-items-center justify-content-between flex-column flex-sm-row"
+            >
+              <div class="col-auto">
+                <div class="small m-0 text-muted">
+                  &copy; 2026 Sky Blue &mdash;
+                  <a href="https://instagram.com/madaapril"
+                    >Developed by Mohammada Aprilianto</a
+                  >
+                </div>
+              </div>
+              <!-- <div class="col-auto">
+                <span class="small text-muted opacity-50">Handcrafted by Mohammada Aprilianto</span>
+            </div> -->
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- #admin-content -->
+    </div>
+    <!-- #admin-wrapper -->
+
+    <div id="sidebar-overlay"></div>
+
+    <!-- Core Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- UI Components -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+    <script src="../../assets/js/script.js"></script>
+
+    <script>
+      let total_realisasi = 0;
+      let total_target = 0;
+
+      let list_namaskpd = [];
+      let persen_skpd = [];
+      let target_skpd = [];
+      let real_skpd = [];
+
+      let hijau = "#1cc88a",
+        hijau_hover = "#18a571";
+
+      function number_format(number, decimals, dec_point, thousands_sep) {
+        number = (number + "").replace(",", "").replace(" ", "");
+        var n = !isFinite(+number) ? 0 : +number,
+          prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+          sep = typeof thousands_sep === "undefined" ? "," : thousands_sep,
+          dec = typeof dec_point === "undefined" ? "." : dec_point,
+          s = "",
+          toFixedFix = function (n, prec) {
+            var k = Math.pow(10, prec);
+            return "" + Math.round(n * k) / k;
+          };
+        s = (prec ? toFixedFix(n, prec) : "" + Math.round(n)).split(".");
+        if (s[0].length > 3) {
+          s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+        }
+        if ((s[1] || "").length < prec) {
+          s[1] = s[1] || "";
+          s[1] += new Array(prec - s[1].length + 1).join("0");
+        }
+        return s.join(dec);
+      }
+
+      function render_bar_chart(
+        list_namaskpd,
+        persen_skpd,
+        target_skpd,
+        real_skpd,
+        max_persen_real = 100,
+      ) {
+        var cr = document.getElementById("realisasiPADAreaChart");
+        if (!cr) return;
+        new Chart(cr, {
+          type: "bar",
+          data: {
+            labels: list_namaskpd,
+            datasets: [
+              {
+                label: "Realisation",
+                backgroundColor: hijau,
+                hoverBackgroundColor: hijau_hover,
+                borderColor: hijau,
+                data: persen_skpd,
+                realisasi: real_skpd,
+                target: target_skpd,
+                namaskpd: list_namaskpd,
+                datalabels: {
+                  anchor: "end",
+                  align: "end",
+                  offset: 5,
+                },
+              },
+            ],
+          },
+          plugins: [ChartDataLabels],
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: "y",
+            layout: {
+              padding: { left: 10, right: 70, top: 10, bottom: 0 },
+            },
+            scales: {
+              x: {
+                ticks: {
+                  callback: function (value) {
+                    return value + "%";
+                  },
+                },
+                max: Math.max(100, Math.ceil(max_persen_real / 10) * 10),
+              },
+              y: {
+                grid: { display: true, drawBorder: false },
+              },
+            },
+            plugins: {
+              legend: { display: false },
+              datalabels: {
+                formatter: function (value) {
+                  return value + "%";
+                },
+              },
+              tooltip: {
+                callbacks: {
+                  label: function (context) {
+                    var index = context.dataIndex;
+                    return [
+                      context.dataset.label +
+                        " : Rp. " +
+                        number_format(
+                          context.dataset.realisasi[index],
+                          2,
+                          ",",
+                          ".",
+                        ) +
+                        " (" +
+                        context.raw +
+                        "%)",
+                      "Target : Rp. " +
+                        number_format(
+                          context.dataset.target[index],
+                          2,
+                          ",",
+                          ".",
+                        ),
+                    ];
+                  },
+                },
+              },
+            },
+          },
+        });
+      }
+
+      const dummyUnitKerja = [
+        {
+          nama: "Dinas Penanaman Modal & PTSP",
+          target: 12000000000,
+          realisasi: 11400000000,
+        },
+        {
+          nama: "Badan Pendapatan Daerah",
+          target: 65000000000,
+          realisasi: 58500000000,
+        },
+        {
+          nama: "Dinas Perhubungan",
+          target: 8500000000,
+          realisasi: 7225000000,
+        },
+        {
+          nama: "Dinas Kesehatan (BLUD RSUD & Puskesmas)",
+          target: 35000000000,
+          realisasi: 28700000000,
+        },
+        {
+          nama: "Badan Pengelola Keuangan & Aset Daerah",
+          target: 10000000000,
+          realisasi: 8200000000,
+        },
+        {
+          nama: "Dinas Lingkungan Hidup",
+          target: 4500000000,
+          realisasi: 3600000000,
+        },
+        {
+          nama: "Dinas Perdagangan & Perindustrian",
+          target: 6000000000,
+          realisasi: 4500000000,
+        },
+        {
+          nama: "Dinas Pariwisata & Kebudayaan",
+          target: 9000000000,
+          realisasi: 6480000000,
+        },
+      ];
+
+      function initDashboard() {
+        let max_persen_real = 100;
+        let data_chart = [];
+
+        dummyUnitKerja.forEach(function (unit) {
+          let target = parseFloat(unit.target);
+          let persen_realisasi =
+            target == 0
+              ? 0
+              : Math.round((unit.realisasi / target) * 100 * 100) / 100;
+          total_realisasi += unit.realisasi;
+          total_target += target;
+
+          data_chart.push({
+            nama: unit.nama,
+            target: target,
+            realisasi: unit.realisasi,
+            persen_realisasi: persen_realisasi,
+          });
+
+          if (persen_realisasi > max_persen_real) {
+            max_persen_real = persen_realisasi;
+          }
+        });
+
+        data_chart.sort((a, b) => b.persen_realisasi - a.persen_realisasi);
+
+        data_chart.forEach(function (item, idx) {
+          list_namaskpd.push(idx + 1 + ". " + item.nama);
+          persen_skpd.push(item.persen_realisasi);
+          target_skpd.push(item.target);
+          real_skpd.push(item.realisasi);
+        });
+
+        let persen_total_realisasi =
+          total_target == 0
+            ? 0
+            : Math.round((total_realisasi / total_target) * 100 * 100) / 100;
+
+        $("#total_realisasi").text(
+          "Rp. " +
+            total_realisasi.toLocaleString("id-ID", {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            }),
+        );
+        $("#total_persen").text(persen_total_realisasi);
+        $("#total_progress_bar").css(
+          "width",
+          Math.min(persen_total_realisasi, 100) + "%",
+        );
+
+        $(".loading-realisasi").addClass("d-none");
+        $(".loading-bar").addClass("d-none");
+
+        render_bar_chart(
+          list_namaskpd,
+          persen_skpd,
+          target_skpd,
+          real_skpd,
+          max_persen_real,
+        );
+      }
+
+      $(document).ready(function () {
+        initDashboard();
+      });
+    </script>
+
+    <!-- Support Me Float Button -->
+    <a
+      href="https://trakteer.id/madaapril/tip"
+      target="_blank"
+      rel="noopener noreferrer"
+      id="support-me-btn"
+      title="Support Me on Trakteer"
+      onmouseover="
+        this.style.transform = 'translateY(-3px) scale(1.04)';
+        this.style.boxShadow = '0 12px 32px rgba(238,90,36,0.55)';
+      "
+      onmouseout="
+        this.style.transform = 'translateY(0) scale(1)';
+        this.style.boxShadow = '0 8px 24px rgba(238,90,36,0.45)';
+      "
+    >
+      <i class="fa-solid fa-mug-hot"></i>
+      Support Me
+    </a>
+  </body>
+</html>

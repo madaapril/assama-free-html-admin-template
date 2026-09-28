@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Created by Mohammada Aprilianto | IG @madaapril"
+    />
+    <meta name="author" content="Mohammada Aprilianto" />
+
+    <title>Buttons - Assama</title>
+
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Frameworks -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"
+      rel="stylesheet"
+    />
+
+    <!-- DataTables -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <!-- FLATPICKR -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.5.4"></script>
+
+    <!-- Custom Premium Styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body class="">
+    <div id="admin-wrapper">
+      <!-- Sidebar -->
+      <aside id="admin-sidebar" class="">
+        <!-- Brand / Logo -->
+        <div class="sidebar-brand-wrapper">
+          <div class="sidebar-brand">
+            <img
+              src="../../assets/images/favicon.png"
+              alt="Logo"
+              class="brand-img"
+            />
+            <div class="brand-text">
+              <span class="brand-name">ASSAMA</span>
+              <span class="brand-sub">Sky Blue</span>
+            </div>
+            <div id="sidebarClose">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav Items -->
+        <div class="sidebar-nav-container pb-3">
+          <div class="nav-section-title mt-0">MENU</div>
+          <a href="../../index.html" class="nav-link">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <div class="nav-section-title">AUTHENTICATION</div>
+          <a href="../auth/login.html" class="nav-link">
+            <i class="fa-solid fa-user"></i>
+            <span>Login</span>
+          </a>
+
+          <div class="nav-section-title">UI ELEMENTS</div>
+          <a href="../ui_elements/colors.html" class="nav-link">
+            <i class="fa-solid fa-palette"></i>
+            <span>Colors</span>
+          </a>
+          <a href="../ui_elements/buttons.html" class="nav-link active">
+            <i class="fa-solid fa-square-pen"></i>
+            <span>Buttons</span>
+          </a>
+          <a href="../ui_elements/sweet_alert.html" class="nav-link">
+            <i class="fa-solid fa-bell"></i>
+            <span>Sweet Alert</span>
+          </a>
+
+          <div class="nav-section-title">DATA</div>
+          <a href="../data/datatables.html" class="nav-link">
+            <i class="fa-solid fa-table"></i>
+            <span>DataTables</span>
+          </a>
+          <a
+            href="#collapseChart"
+            data-bs-toggle="collapse"
+            class="nav-link collapsed"
+            aria-expanded="false"
+            aria-controls="collapseChart"
+          >
+            <i class="fa-solid fa-chart-simple"></i>
+            <span>Charts</span>
+            <i
+              class="fa-solid fa-chevron-down ms-auto"
+              style="font-size: 0.8rem; transition: transform 0.3s"
+            ></i>
+          </a>
+          <div id="collapseChart" class="collapse">
+            <div
+              class="glass-card mb-2 mx-3 p-2"
+              style="
+                border-radius: 12px;
+                background: rgba(255, 255, 255, 0.4);
+                border: 1px solid rgba(255, 255, 255, 0.5);
+              "
+            >
+              <a href="../data/chartjs.html" class="nav-link-sub"> Chart.js</a>
+            </div>
+          </div>
+
+          <div class="nav-section-title">PAGES</div>
+          <a href="../blank.html" class="nav-link">
+            <i class="fa-solid fa-file"></i>
+            <span>Blank Page</span>
+          </a>
+
+          <div class="nav-section-title">ERRORS</div>
+          <a href="../errors/404.html" class="nav-link">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>404</span>
+          </a>
+          <a href="../errors/maintenance.html" class="nav-link">
+            <i class="fa-solid fa-tools"></i>
+            <span>Maintenance</span>
+          </a>
+        </div>
+      </aside>
+
+      <div id="admin-content">
+        <!-- Topbar -->
+        <div id="admin-topbar">
+          <div class="sidebar-toggle" id="sidebarToggle">
+            <i class="fa-solid fa-bars-staggered fs-5"></i>
+          </div>
+
+          <div class="topbar-brand">
+            <span class="text-gradient">ASSAMA</span>
+            <span class="ms-1 d-none d-sm-inline opacity-75 fw-light"
+              >Blank</span
+            >
+          </div>
+
+          <div class="topbar-actions">
+            <!-- User Profile Dropdown -->
+            <div class="dropdown">
+              <div
+                class="user-profile-btn"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="user-info d-none d-md-block">
+                  <span class="user-name">Mohammada Aprilianto</span>
+                </div>
+                <span
+                  class="user-avatar bg-primary d-flex align-items-center justify-content-center text-white fw-bold"
+                  >MA</span
+                >
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-premium">
+                <li class="px-3 py-2 mb-2 d-md-none border-bottom border-light">
+                  <span class="user-name fw-bold">Mohammada Aprilianto</span>
+                </li>
+                <!-- <li>
+                    <a class="dropdown-item dropdown-item-premium" href="<?= base_url('profile'); ?>">
+                        <i class="fa-solid fa-user-gear"></i> Profil Saya
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item dropdown-item-premium" href="<?= base_url('settings'); ?>">
+                        <i class="fa-solid fa-gears"></i> Pengaturan
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider opacity-50">
+                </li> -->
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-premium text-danger"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-power-off text-danger"></i> Sign Out
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <main class="content-container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="glass-card glass-card-header p-4 mb-4">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <h2 class="fw-bold mb-0 text-main fs-5">
+                      <i class="fa-solid fa-square-pen me-2 text-primary"></i>
+                      Buttons
+                    </h2>
+                    <p class="text-muted small mb-0 mt-1">Buttons example</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Solid Buttons -->
+              <div class="glass-card card shadow mb-4">
+                <div class="card-body p-4">
+                  <h6
+                    class="fw-bold text-muted text-uppercase mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.1em"
+                  >
+                    <i class="fa-solid fa-circle me-2 text-primary"></i>Solid
+                    Buttons
+                  </h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-primary">
+                      <i class="fa-solid fa-circle me-2"></i>Primary
+                    </button>
+                    <button class="btn btn-secondary">
+                      <i class="fa-solid fa-circle me-2"></i>Secondary
+                    </button>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-circle me-2"></i>Success
+                    </button>
+                    <button class="btn btn-danger">
+                      <i class="fa-solid fa-circle me-2"></i>Danger
+                    </button>
+                    <button class="btn btn-warning">
+                      <i class="fa-solid fa-circle me-2"></i>Warning
+                    </button>
+                    <button class="btn btn-info text-white">
+                      <i class="fa-solid fa-circle me-2"></i>Info
+                    </button>
+                    <button class="btn btn-light">
+                      <i class="fa-solid fa-circle me-2"></i>Light
+                    </button>
+                    <button class="btn btn-dark">
+                      <i class="fa-solid fa-circle me-2"></i>Dark
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Outline Buttons -->
+              <div class="glass-card card shadow mb-4">
+                <div class="card-body p-4">
+                  <h6
+                    class="fw-bold text-muted text-uppercase mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.1em"
+                  >
+                    <i class="fa-regular fa-circle me-2 text-primary"></i
+                    >Outline Buttons
+                  </h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-outline-primary">Primary</button>
+                    <button class="btn btn-outline-secondary">Secondary</button>
+                    <button class="btn btn-outline-success">Success</button>
+                    <button class="btn btn-outline-danger">Danger</button>
+                    <button class="btn btn-outline-warning">Warning</button>
+                    <button class="btn btn-outline-info">Info</button>
+                    <button class="btn btn-outline-light">Light</button>
+                    <button class="btn btn-outline-dark">Dark</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pill Buttons -->
+              <div class="glass-card card shadow mb-4">
+                <div class="card-body p-4">
+                  <h6
+                    class="fw-bold text-muted text-uppercase mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.1em"
+                  >
+                    <i class="fa-solid fa-capsules me-2 text-primary"></i>Pill /
+                    Rounded Buttons
+                  </h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-primary rounded-pill px-4">
+                      Primary
+                    </button>
+                    <button class="btn btn-success rounded-pill px-4">
+                      Success
+                    </button>
+                    <button class="btn btn-danger rounded-pill px-4">
+                      Danger
+                    </button>
+                    <button class="btn btn-warning rounded-pill px-4">
+                      Warning
+                    </button>
+                    <button class="btn btn-outline-primary rounded-pill px-4">
+                      Outline Primary
+                    </button>
+                    <button class="btn btn-outline-success rounded-pill px-4">
+                      Outline Success
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button Sizes -->
+              <div class="glass-card card shadow mb-4">
+                <div class="card-body p-4">
+                  <h6
+                    class="fw-bold text-muted text-uppercase mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.1em"
+                  >
+                    <i
+                      class="fa-solid fa-up-right-and-down-left-from-center me-2 text-primary"
+                    ></i
+                    >Button Sizes
+                  </h6>
+                  <div class="d-flex flex-wrap align-items-center gap-2">
+                    <button class="btn btn-primary btn-lg">
+                      <i class="fa-solid fa-star me-2"></i>Large
+                    </button>
+                    <button class="btn btn-primary">
+                      <i class="fa-solid fa-star me-2"></i>Default
+                    </button>
+                    <button class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-star me-2"></i>Small
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Icon Buttons -->
+              <div class="glass-card card shadow mb-4">
+                <div class="card-body p-4">
+                  <h6
+                    class="fw-bold text-muted text-uppercase mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.1em"
+                  >
+                    <i class="fa-solid fa-icons me-2 text-primary"></i>Icon
+                    Buttons
+                  </h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-primary" title="Edit">
+                      <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="btn btn-success" title="Add">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button class="btn btn-danger" title="Delete">
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                    <button class="btn btn-warning" title="Warning">
+                      <i class="fa-solid fa-triangle-exclamation"></i>
+                    </button>
+                    <button class="btn btn-info text-white" title="Info">
+                      <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <button class="btn btn-outline-primary" title="Search">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary" title="Settings">
+                      <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <button
+                      class="btn btn-outline-danger rounded-pill px-3"
+                      title="Close"
+                    >
+                      <i class="fa-solid fa-xmark me-1"></i>Close
+                    </button>
+                    <button
+                      class="btn btn-outline-success rounded-pill px-3"
+                      title="Download"
+                    >
+                      <i class="fa-solid fa-download me-1"></i>Download
+                    </button>
+                    <button
+                      class="btn btn-outline-primary rounded-pill px-3"
+                      title="Upload"
+                    >
+                      <i class="fa-solid fa-upload me-1"></i>Upload
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button States -->
+              <div class="glass-card card shadow mb-4">
+                <div class="card-body p-4">
+                  <h6
+                    class="fw-bold text-muted text-uppercase mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.1em"
+                  >
+                    <i class="fa-solid fa-toggle-on me-2 text-primary"></i
+                    >Button States
+                  </h6>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-primary" disabled>
+                      <i class="fa-solid fa-ban me-2"></i>Disabled
+                    </button>
+                    <button class="btn btn-success" disabled>
+                      <i class="fa-solid fa-ban me-2"></i>Disabled
+                    </button>
+                    <button class="btn btn-primary" id="btn-loading-demo">
+                      <span
+                        class="spinner-border spinner-border-sm me-2"
+                        role="status"
+                        aria-hidden="true"
+                      ></span>
+                      Loading...
+                    </button>
+                    <button class="btn btn-primary active">
+                      <i class="fa-solid fa-check me-2"></i>Active
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button Group -->
+              <div class="glass-card card shadow mb-4">
+                <div class="card-body p-4">
+                  <h6
+                    class="fw-bold text-muted text-uppercase mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.1em"
+                  >
+                    <i class="fa-solid fa-layer-group me-2 text-primary"></i
+                    >Button Groups
+                  </h6>
+                  <div class="d-flex flex-wrap gap-3">
+                    <div class="btn-group" role="group">
+                      <button class="btn btn-outline-primary">Left</button>
+                      <button class="btn btn-outline-primary">Center</button>
+                      <button class="btn btn-outline-primary">Right</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                      <button class="btn btn-primary">
+                        <i class="fa-solid fa-bold"></i>
+                      </button>
+                      <button class="btn btn-primary">
+                        <i class="fa-solid fa-italic"></i>
+                      </button>
+                      <button class="btn btn-primary">
+                        <i class="fa-solid fa-underline"></i>
+                      </button>
+                    </div>
+                    <div class="btn-group" role="group">
+                      <button class="btn btn-outline-success">Export</button>
+                      <button
+                        class="btn btn-success dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown"
+                      ></button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file-csv me-2"></i>CSV</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file-excel me-2"></i>Excel</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file-pdf me-2"></i>PDF</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="mt-auto py-4">
+          <div class="px-4">
+            <div
+              class="row align-items-center justify-content-between flex-column flex-sm-row"
+            >
+              <div class="col-auto">
+                <div class="small m-0 text-muted">
+                  &copy; 2026 Sky Blue &mdash;
+                  <a href="https://instagram.com/madaapril"
+                    >Developed by Mohammada Aprilianto</a
+                  >
+                </div>
+              </div>
+              <!-- <div class="col-auto">
+                <span class="small text-muted opacity-50">Handcrafted by Mohammada Aprilianto</span>
+            </div> -->
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- #admin-content -->
+    </div>
+    <!-- #admin-wrapper -->
+
+    <div id="sidebar-overlay"></div>
+
+    <!-- Core Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- UI Components -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+
+    <script src="../../assets/js/script.js"></script>
+
+    <!-- Support Me Float Button -->
+    <a
+      href="https://trakteer.id/madaapril/tip"
+      target="_blank"
+      rel="noopener noreferrer"
+      id="support-me-btn"
+      title="Support Me on Trakteer"
+      onmouseover="
+        this.style.transform = 'translateY(-3px) scale(1.04)';
+        this.style.boxShadow = '0 12px 32px rgba(238,90,36,0.55)';
+      "
+      onmouseout="
+        this.style.transform = 'translateY(0) scale(1)';
+        this.style.boxShadow = '0 8px 24px rgba(238,90,36,0.45)';
+      "
+    >
+      <i class="fa-solid fa-mug-hot"></i>
+      Support Me
+    </a>
+  </body>
+</html>
