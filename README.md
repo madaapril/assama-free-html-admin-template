@@ -185,6 +185,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 **Mohammada Aprilianto**
 
 - Instagram: [@madaapril](https://instagram.com/madaapril)
+- Store: [madaapril.myr.id](https://madaapril.myr.id)
 - Trakteer: [trakteer.id/madaapril](https://trakteer.id/madaapril/tip)
 
 ---
